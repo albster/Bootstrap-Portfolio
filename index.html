@@ -1,84 +1,217 @@
-<!DOCTYPE <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Portfolio_1</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- relative linking -->
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <script src="main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Albert R. Cozzette</title>
+    <link href="https://fonts.googleapis.com/css?family=Damion|Rammetto+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
-    
-    <div class="navbar navbar-inverse">
-          <div class="container-fluid">
-              <div class="navbar-header">
-                   <h2>Albert R. Cozzette</h2>
+    <!--  Header -->
+    <header>
+        <div class="header">
+            <!--Navigation -->
+            <nav>
+                <ul class="header-nav">
+                    <li class="nav-link">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#myblog">My Blog</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- End Navigation -->
+            <!-- <img src="images/Robo-7.png" alt="robot head" id="header-robot"> -->
+            <h1 class="header-title">Albert Raymond Cozzette</h1>
+            <h3 class="header-title">Vintage Themed Portfolio</h3>
+            <div class="slides
+        how" id="slideshow">
+                <a id="prev">‹</a>
+                <img src="images/vintage1-2x.jpg" alt="" class="carousel">
+                <img src="images/vintage2-2x.jpg" alt="" class="carousel">
+                <img src="images/vintage3-2x.jpg" alt="" class="carousel">
+                <img src="images/vintage4-2x.jpg" alt="" class="carousel">
+                <a id="next">›</a>
+                <span class="caption">The 60's</span>
+                <span class="caption">Vintage Sound</span>
+                <span class="caption">Music in Colors</span>
+                <span class="caption">Eero's Design</span>
+            </div>
+        </div>
+    </header>
+    <!--End Header-->
+
+    <!--Main-->
+    <main>
+        <!--About Section-->
+        <section class="about" id="about">
+
+            <h2>About Me</h2>
+            <div class="about-box">
+                <h3>Design</h3>
+                <img src="images/robot1.png" alt="robot head" class="robot-head">
+                <p>When it comes to design, I am greatly insipered by the past styles of 60's Mod Culture and 70's Punk Rock. Merging those styles into the todays reality, bringing a very unique style and design to the table.
+                </p>
+            </div>
+            <div class="about-box">
+                <h3>Program Languages</h3>
+                <img src="images/robot3.png" alt="robot head" class="robot-head">
+                <p>I understand and implement the fundamentals of HTML, CSS, Bootstrap, JavaScript, Jquery, Firebase, Nodejs, mySQL, Handlebars, Sequelize, Mongo, Github and deploying apps via Heroku
+                </p>
+            </div>
+            <div class="about-box">
+                <h3>Style</h3>
+                <img src="images/robot2.png" alt="robot head" class="robot-head">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, accusamus hic. Amet, nulla, nihil voluptate
+                    perferendis laudantium possimus eius commodi qui repudiandae porro fuga beatae quam voluptas modi maxime.
+                    Rem.
+                </p>
+            </div>
+
+        </section>
+        <!--End About Section-->
+
+
+        <!--Portfolio-->
+        <section class="portfolio" id="portfolio">
+
+            <h2>Portfolio</h2>
+            <div class="portfolio-box">
+                <img src="images/design2.png" alt="design">
+                <span class="portfolio-caption">Trivia</span>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/website2.jpg" alt="website">
+                <span class="portfolio-caption">Schedule</span>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/app.jpg" alt="app">
+                <span class="portfolio-caption">App</span>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/code2.jpg" alt="code">
+                <span class="portfolio-caption">Game</span>
+            </div>
+
+        </section>
+        <!-- End Portfolio-->
+
+        <!--MY BLOG-->
+        <section>
+            <div id="myblog">
+                <h2>My Blog</h2>
+                <div class="blog-post">
+                    <img src="images/ontheroad-2x.jpg" alt="cars" class="blog-post_images">
+                    <div class="blog-post_content">
+                        <h3>On the Road</h3>
+                        <span class="blog-post_date">
+                            Wen. May 21st 2019 17:09:18
+                        </span>
+                        <p>I am always up for a road trip, having a proper work life balance mean the most to me. Weather it's driving cross country or going primitive camping, I greatly enjoy the open road. Always finding inspiration and solitude. </p>
+                        <!-- <button class="blog-post_button"> -->
+                           
+                        </button>
+                    </div>
                 </div>
-    
+                <div class="blog-post">
+                    <img src="images/boxes.jpg" alt="boxes" class="blog-post_images">
+                    <div class="blog-post_content">
+                        <h3>A box of memories</h3>
+                        <span class="blog-post_date">
+                            Sat Jul 28 2018 07:27:38
+                        </span>
 
-                <ul class="nav navbar-nav navbar-right">
-                    <!-- -->
-                 <li><a href="index.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul> 
-
-           
-            </div><!-- closing fliud-->
-     </div>
-         <div id="main-container" class="container">
-           <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-8">
-                    <div>
-                       <h2> Albert R. Cozzette</h2>
+                        <p>For me, living life to the fullest is why we are here. The good times and the bad times make us who we are. We live, we learn and we love. Creating memories, is one of my favorite past times.</p>
+                        <!-- <button class="blog-post_button"> -->
+                            
+                        </button>
                     </div>
 
-                   <!-- link to pic-->
-                   <img class="img-thumbnail" src="assets/images/bio_pic.jpg" width="200" height="250" alt="Thumbnail image">
-                   <!-- Paragraphs -->
-                   <p>
-                    A born and raised, San Francisco/Bay Area native who relocated to the Cleveland area in the summer of 2012. I've been employeed with Apple Retail since 2007, as a Mac Genius. Last year, I was recruited for an Career Experiance at Apple Corporate Offices at Apple Park in Cupertino, CA. During my time there, I learned so much, so fast. I was was working with hardware and software engineers building devolpment hardware for Mac, iOS & AppleWatch. After that Experiance, it triggered my attipite for learning. Leading to me taking the Coding Boot Camp at Case Western.
-                    <br>
-                    <br>
+                </div>
+                <div class="blog-post">
+                    <img src="images/books.jpg" alt="books" class="blog-post_images">
+                    <div class="blog-post_content">
+                        <h3>Books I loved</h3>
+                        <span class="blog-post_date">
+                            Thu Dec 20 2018 11:15:53
+                        </span>
+                        <p>The beat poets opened my mind to another world of written expression, I can always appericate good literature. I enjoy slowing down and taking in a nice well written book that makes think differently. In this fast paced world of today, this helps me stay focused.</p>
+                        <!-- <button class="blog-post_button"> -->
+                            
+                        </button>
+                    </div>
+                </div>
+            </div>
 
-                    During the coding boot camp, I've learned the fundementals of HTML, CSS, JavaScript, JQuery, Bootstrap. GIT and Node.js. Here's a link to my Githib to see my projects submitted during the course.
-                    <br>
-                   <br>
+        </section>
+        <!--End MY BLOG-->
+    </main>
+    <!--End Main-->
 
-                     <a href="https://github.com/albster">my github</a>
+    <!--Footer-->
+    <footer>
+        <section class="contact" id="contact">
+
+            <div class="contact-inner">
+                <h2>Contact Me</h2>
+                <span class="contact-subtitle">Ask a question!</span>
+                <form id="contact-form">
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Your name" class="contact-form_input">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Your email" class="contact-form_input" class="contact-form_input">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" placeholder="Your title here" class="contact-form_input">
+                    <label for="message">Your Message:</label>
+                    <textarea name="message" rows="10" id="message">Write something here</textarea>
+                    <input type="submit" class="contact-form_submit">
+
+                </form>
+            </div>
+            <div id="social-media">
+                <h2>Social</h2>
+                <div class="social-media_icons">
+                    <i class="fab fa-github-alt social-media_icon">
+                        <a href="#" aria-label="github"></a>
+                    </i>
+                    <i class="fab fa-twitter social-media_icon">
+                        <a href="#" aria-label="twitter"></a>
+                    </i>
+                    <i class="fab fa-google-plus-g social-media_icon">
+                        <a href="#" aria-label="google plus"></a>
+                    </i>
+                    <i class="fab fa-facebook-f social-media_icon">
+                        <a href="#" aria-label="facebook"></a>
+                    </i>
+                    <i class="fab fa-pinterest-p social-media_icon">
+                        <a href="#" aria-label="pinterest"></a>
+                    </i>
 
 
 
 
-            </div> 
-        </div>
-      </div>
-    </div>
+                </div>
+            </div>
 
-                
-              
+        </section>
        
-
-        <div class="clearfix"></div>
-
-        <!--copyright logo-->
-        <footer>
-            &copy; 2019 Albert Raymond Cozzette
-        </footer>
-
-
-
-
-
-           <!-- jQuery CDN -->
-           <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-           <!-- Bootstrap Js CDN -->
-           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      
-    
+    </footer>
+    <script src="js/vintageportfolio.js"></script>
 </body>
+
 </html>
